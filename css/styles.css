@@ -392,13 +392,10 @@ div.product-description {
 .list.images {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
-  padding: 0;
-  margin: 0;
 }
 
 .product-item {
+  flex-basis: calc((100% - 60px) / 3);
   background-color: var(--primary-white-color);
 }
 
