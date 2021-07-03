@@ -282,7 +282,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
-  margin-bottom: -30px;
 }
 
 .team .employee-card {
@@ -322,6 +321,7 @@ body {
   justify-content: center;
   margin-left: 0;
   margin-right: -10px;
+  /* padding-bottom: 30px; */
 }
 
 .network-item:not(:last-child) {
