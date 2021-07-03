@@ -3,6 +3,7 @@
   --title-text-color: #212121;
   --primary-white-color: #ffffff;
   --accent-color: #2196f3;
+  --main-icon-color: #afb1b8;
 }
 
 /* Global resets and classes */
@@ -123,6 +124,8 @@ body {
 }
 
 .contacts-item {
+  display: flex;
+  align-items: center;
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -133,9 +136,12 @@ body {
 .contacts-item:hover,
 .contacts-item:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
-.contacts-item.current {
-  color: var(--accent-color);
+
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Hero, bgc temporary */
@@ -209,6 +215,16 @@ body {
   margin-right: -30px;
 }
 
+.pros-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+}
+
 .heading-studio-list-item {
   width: 270px;
 }
@@ -259,15 +275,21 @@ body {
 
 /* Our team */
 
-/* .employees.section {
-  padding-top: 47px;
-} */
+.employees.section {
+  background-color: #f5f4fa;
+}
 
 .team {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
+}
+
+.team > .employee-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .employee-card:not(:last-child) {
@@ -277,6 +299,7 @@ body {
 div.employee-info {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--primary-white-color);
 }
 
 .heading-studio-employee {
@@ -291,6 +314,34 @@ div.employee-info {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+}
+
+.networks {
+  display: flex;
+  max-width: 270px;
+  justify-content: center;
+  margin-left: 0;
+  margin-top: 16px;
+  margin-right: -10px;
+}
+
+.network-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.network-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  fill: var(--main-icon-color);
+  border-radius: 50%;
+}
+
+.network-link:hover,
+.network-link:focus {
+  fill: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
 /* Footer */
