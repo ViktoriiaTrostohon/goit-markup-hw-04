@@ -281,7 +281,6 @@ body {
 .team {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
 }
 
 .team .employee-card {
@@ -317,11 +316,8 @@ body {
 
 .networks {
   display: flex;
-  max-width: 270px;
   justify-content: center;
   margin-left: 0;
-  margin-right: -10px;
-  /* padding-bottom: 30px; */
 }
 
 .network-item:not(:last-child) {
@@ -343,23 +339,58 @@ body {
   background-color: var(--accent-color);
 }
 
+/* Clients */
+
+.clients-list {
+  display: flex;
+  align-items: center;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  fill: var(--main-icon-color);
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  border: 1px solid var(--main-icon-color);
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
 /* Footer */
 
 .footer {
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0px;
 }
 
 .footer .logo-name-two {
   color: var(--primary-white-color);
 }
-.container.bottom {
+.container.contact-us {
+  display: flex;
+}
+
+.logo-contacts {
   display: flex;
   flex-direction: column;
+  margin-right: 70px;
 }
 
 .logo.page-bottom {
+  margin-right: 0px;
   margin-bottom: 20px;
   padding-left: 0;
 }
@@ -391,6 +422,30 @@ body {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+}
+
+.join-us {
+  display: block;
+  height: 80px;
+}
+
+.footer-heading {
+  margin-bottom: 20px;
+  align-items: baseline;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.join-us .network-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.join-us .network-link:hover,
+.join-us .network-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* Examples of our works:buttons */
@@ -466,6 +521,13 @@ div.product-description {
 
 .product-item:not(:nth-child(3n + 3)) {
   margin-right: 30px;
+}
+
+.product-item:hover,
+.product-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .product-image {
