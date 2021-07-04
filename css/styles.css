@@ -440,6 +440,7 @@ body {
 }
 
 .join-us .network-link {
+  fill: var(--primary-white-color);
   background: rgba(255, 255, 255, 0.1);
 }
 
